@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.5; user-scalable=no;">
+		<title>jPlayer - Circle Player</title>
+
+		<link rel="stylesheet" href="style.css">
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+		<script type="text/javascript" src="circle.player.js"></script>
+		<!--<script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>-->
+
+	</head>
+	<body>
+
+		<!-- The jPlayer div must not be hidden. Keep it at the root of the body element to avoid any such problems. -->
+		<div id="jquery_jplayer_1" class="cp-jplayer"></div>
+
+	</body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
+                    {
+                        m4a: "ImSnake.mp3"
+                    },
+                    {
+                        image: "player1.png",
+                        progressBar :{
+                            width: "70px",
+                            background: "blue"
+                        }
+                    }
+
+            );
+
+        });
+    </script>
+</html>

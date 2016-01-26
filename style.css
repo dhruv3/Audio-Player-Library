@@ -1,0 +1,8 @@
+.cp-jplayer{
+    display: inline-block;
+    position: relative;
+}
+
+.cp-jplayer #progressBar{
+    position: absolute;
+}
